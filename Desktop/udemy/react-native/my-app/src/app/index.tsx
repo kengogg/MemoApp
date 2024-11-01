@@ -1,50 +1,7 @@
-import { StyleSheet, Text, View } from "react-native";
-
-import Header from '../components/Header';
-
-import MemoListItem from "../components/MemoListItem";
-
-import CircleButton from '../components/CircleButton';
-
-// export default function Page() {
-//   return (
-//     <View style={styles.container}>
-//       <View style={styles.main}>
-//         <Text style={styles.title}>Hello World</Text>
-//         <Text style={styles.subtitle}>This is the first page of your app.</Text>
-//       </View>
-//     </View>
-//   );
-// }
+import { Redirect } from "expo-router";
 
 const Index = (): JSX.Element => {
-  return (    
-    <View style={styles.container}>
-
-      <Header />
-
-    <View>
-
-      <MemoListItem />
-      <MemoListItem />
-      <MemoListItem />
-
-    </View>
-
-      <CircleButton>
-        +
-      </CircleButton>
-
-    </View>
-  )
+  return <Redirect href='auth/login' />
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#ffffff'
-  },
-
-})
 
 export default Index
