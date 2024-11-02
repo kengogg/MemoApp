@@ -15,7 +15,10 @@ const handlePress = (): void => {
 
 const Create = (): JSX.Element => {
   return (
-    <KeyboardAvoidingView behavior='height' style={styles.container}>
+    <KeyboardAvoidingView 
+    behavior='height' 
+    keyboardVerticalOffset={64} 
+    style={styles.container}>
       <View style={styles.inputContainer}>
         <TextInput multiline style={styles.input} value=''/>
       </View>
